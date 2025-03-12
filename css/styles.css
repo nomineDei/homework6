@@ -104,7 +104,8 @@ h1 {
 .team {
   background-color: #f4f4fd;
 }
-.team-title {
+.team-title,
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
@@ -138,14 +139,6 @@ h1 {
 /* ------PORTFOLIO------ */
 .portfolio {
 }
-.portfolio-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
 .portfolio-list {
 }
 .portfolio-item {
@@ -170,6 +163,14 @@ h1 {
 /* ------FOOTER------ */
 .footer {
   background-color: #2e2f42;
+}
+.footer-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
 }
 .footer-text {
   font-weight: 400;
