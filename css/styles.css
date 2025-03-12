@@ -63,6 +63,7 @@ a {
   background-color: #2e2f42;
 }
 .hero-title {
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -111,6 +112,7 @@ a {
 }
 .team-title,
 .portfolio-title {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
