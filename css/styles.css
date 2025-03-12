@@ -87,14 +87,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300;
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
   width: 200;
-  margin: 0 auto;
 }
 .hero-button {
   font-weight: 500;
@@ -116,7 +115,6 @@ a {
 }
 .title-button:hover,
 .title-button:focus {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #404bbf;
 }
 /* ------HERO------ */
@@ -243,9 +241,7 @@ a {
   width: 1440px;
   height: 312px;
 }
-.footerbox {
-  width: 264px;
-  height: 112px;
+
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
