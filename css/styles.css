@@ -144,7 +144,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #fff;
 
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   max-width: 496px;
@@ -160,7 +160,8 @@ h6 {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
   border-radius: 4px;
-  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 }
 
 .hero-container-btn {
@@ -189,7 +190,7 @@ h6 {
 }
 
 .benefits-item {
-  width: calc((100%-72) / 4);
+  flex-basis: calc((100%-72) / 4);
 }
 
 .benefits-title {
