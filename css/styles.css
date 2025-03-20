@@ -279,7 +279,6 @@ h6 {
 
 .portfolio-list {
   display: flex;
-
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
@@ -288,14 +287,10 @@ h6 {
 .portfolio-item {
   background: #fff;
 
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   width: calc((100% - 48px) / 3);
 }
 
 .portfolio-logo {
-  margin-bottom: 32px;
 }
 
 .portfolio-subtitle {
@@ -306,6 +301,8 @@ h6 {
   color: #2e2f42;
 
   margin-bottom: 8px;
+  padding-left: 16px;
+  padding-top: 32px;
 }
 
 .portfolio-text {
@@ -315,6 +312,13 @@ h6 {
   letter-spacing: 0.02em;
 
   padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.portfolio-container-text {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 /* ------PORTFOLIO------ */
