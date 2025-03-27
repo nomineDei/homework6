@@ -60,6 +60,10 @@ h6 {
 
 .head {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  max-width: 1158px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -75,6 +79,7 @@ h6 {
 .logo {
   color: #2e2f42;
 }
+
 .name-page {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -94,11 +99,6 @@ h6 {
   gap: 40px;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
-  color: #404bbf;
-}
-
 .navigation-link {
   font-weight: 500;
   font-size: 16px;
@@ -108,6 +108,24 @@ h6 {
 
   padding: 24px 0;
   display: block;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-link.current {
+  position: relative;
+}
+
+.navigation-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+
+  width: 100%;
+  height: 4px;
 }
 
 .contacts {
@@ -129,10 +147,15 @@ h6 {
 
   display: block;
   padding: 24px 0;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:focus,
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link.current {
   color: #404bbf;
 }
 
@@ -142,6 +165,17 @@ h6 {
 
 .hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1158px;
+  margin: 0 auto;
+
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -209,6 +243,21 @@ h6 {
 
 .benefits-item {
   flex-basis: calc((100%-72) / 4);
+}
+
+.benefits-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  width: 100%;
+  height: 112px;
+  margin-bottom: 8px;
+}
+
+.benefits-icon {
 }
 
 .benefits-title {
@@ -291,6 +340,39 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-container-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-container-item {
+}
+
+.team-container-soc {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #4d5ae5;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-container-soc:hover,
+.team-container-soc:focus {
+  background-color: #404bbf;
+}
+
+.team-soc-icon {
+  fill: #f4f4fd;
 }
 
 /* ------TEAM------ */
