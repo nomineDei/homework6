@@ -394,6 +394,7 @@ h6 {
   background: #fff;
 
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-stumb {
@@ -422,8 +423,8 @@ h6 {
 }
 
 .portfolio-item:hover .portfolio-container-text {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-logo {
@@ -451,7 +452,6 @@ h6 {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------PORTFOLIO------ */
