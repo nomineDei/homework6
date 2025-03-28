@@ -62,8 +62,6 @@ h6 {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  max-width: 1158px;
-  margin: 0 auto;
 }
 
 .header-container {
@@ -202,6 +200,7 @@ h6 {
   cursor: pointer;
   background-color: #4d5ae5;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   border-radius: 4px;
   min-width: 169px;
@@ -246,9 +245,7 @@ h6 {
 }
 
 .benefits-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background: #f4f4fd;
@@ -258,6 +255,10 @@ h6 {
 }
 
 .benefits-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .benefits-title {
@@ -356,10 +357,10 @@ h6 {
 .team-container-soc {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: #4d5ae5;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   align-items: center;
@@ -395,6 +396,37 @@ h6 {
   background: #fff;
 
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-item-stumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item-text {
+  padding: 40px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .portfolio-item-text {
+  transform: translateY(0);
+}
+
+.portfolio-item:hover .portfolio-container-text {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-logo {
@@ -434,6 +466,11 @@ h6 {
   padding-bottom: 100px;
 }
 
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -459,4 +496,21 @@ h6 {
   color: #f4f4fd;
 
   max-width: 264px;
+}
+
+.footer .team-container-soc:hover {
+  background-color: #31d0aa;
+}
+
+.footer-soc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-container-logo {
+  margin-right: 120px;
 }
