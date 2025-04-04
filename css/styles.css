@@ -535,8 +535,9 @@ h6 {
 .footer-cont-form {
 }
 .footer-form {
+  gap: 24px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .footer-input {
@@ -546,7 +547,11 @@ h6 {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
 }
 
 .footer-input::placeholder {
@@ -555,10 +560,10 @@ h6 {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  padding-left: 16px;
 }
 
 .footer-btn {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -595,9 +600,9 @@ h6 {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -634,12 +639,15 @@ h6 {
   top: 24px;
   right: 24px;
   border-radius: 50%;
-  border: 1px solid #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0;
 
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: flex;
   align-items: center;
@@ -653,7 +661,7 @@ h6 {
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: #f4f4fd;
+  fill: #ffffff;
 }
 
 .modal-close-icon {
@@ -668,7 +676,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .modal-input-wrap {
@@ -696,7 +704,7 @@ h6 {
 
 .modal-icon {
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   fill: #2e2f42;
@@ -714,14 +722,15 @@ h6 {
 .modal-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -732,11 +741,20 @@ h6 {
   background-color: transparent;
   padding: 8px 16px;
   resize: none;
-  outline: none;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-checkbox {
-  margin-top: 20px;
   margin-bottom: 24px;
 }
 
@@ -758,7 +776,8 @@ h6 {
   justify-content: center;
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 16px;
   height: 16px;
@@ -770,7 +789,7 @@ h6 {
 .accept-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 
