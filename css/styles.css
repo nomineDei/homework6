@@ -254,7 +254,7 @@ h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-width: 320px;
+
   margin: 0 auto;
 
   padding-top: 72px;
@@ -939,7 +939,6 @@ h6 {
   /* ---HERO--- */
 
   .hero {
-    max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(
